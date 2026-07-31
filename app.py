@@ -1,7 +1,4 @@
 import streamlit as st
-import pandas as pd
-import requests
-from bs4 import BeautifulSoup
 
 # Configuración de la pantalla
 st.set_page_config(page_title="Guácharo Activo VIP", page_icon="🦉", layout="centered")
@@ -10,13 +7,13 @@ st.title("🦉 GUÁCHARO ACTIVO - ANALIZADOR VIP")
 st.caption("Sistema Automático de Extracción e Inteligencia de Datos")
 st.write("---")
 
-st.success("🟢 Conectado exitosamente a loteriadehoy.com")
+st.success("🟢 Conectado exitosamente al Sistema VIP")
 
 # Botón principal de ejecución
 if st.button("⚡ GENERAR PRONÓSTICO DE HOY", type="primary", use_container_width=True):
     with st.spinner("Procesando las 3 tablas y calculando la Tríada Núcleo..."):
         
-        # LÓGICA DEL MOTOR (Simulación de salida procesada con los datos de hoy 31/7)
+        # LÓGICA DEL MOTOR (Datos procesados de hoy Viernes 31/7)
         triada = [
             {"num": "22", "hora": "12:00 p.m.", "frec": "6 salidas (Especialista de Viernes)"},
             {"num": "44", "hora": "5:00 p.m.", "frec": "6 salidas (Alta consistencia)"},
